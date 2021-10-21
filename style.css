@@ -34,7 +34,7 @@
 body {
     font-family: "Red Hat Display";
     font-size: 1rem;
-    background-image: url(./images/pattern-background-desktop.svg);
+    background-image: url(https://raw.githubusercontent.com/putraprdn/order-summary/4f4666fef0934c932993fff9672e5e31ee5546ed/images/pattern-background-desktop.svg);
     background-color: var(--Pale-blue);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -145,6 +145,10 @@ h1, p {
         font-size: 10px;
     }
     body {
-        background-image: url(./images/pattern-background-mobile.svg);
+        background-image: url(https://raw.githubusercontent.com/putraprdn/order-summary/4f4666fef0934c932993fff9672e5e31ee5546ed/images/pattern-background-mobile.svg);
+    }
+
+    #hero {
+        margin: 25% auto 0 auto;
     }
 }
