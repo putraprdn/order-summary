@@ -1,0 +1,150 @@
+/* 
+    ##### FONT
+    - Family: [Red Hat Display](https://fonts.google.com/specimen/Red+Hat+Display)
+    - Weights: 500, 700, 900
+
+    ##### Responsive
+    - Mobile: 375px
+    - Desktop: 1440px
+
+    ##### Colors
+:root {
+
+    ### Primary
+    - Pale blue: hsl(225, 100%, 94%)
+    - Bright blue: hsl(245, 75%, 52%)
+
+    ### Neutral
+    - Very pale blue: hsl(225, 100%, 98%)
+    - Desaturated blue: hsl(224, 23%, 55%)
+    - Dark blue: hsl(223, 47%, 23%)
+}
+ */
+:root {
+
+    /* Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+body {
+    font-family: "Red Hat Display";
+    font-size: 1rem;
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-color: var(--Pale-blue);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1, p {
+    margin: 0;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    font-family: "Red Hat Display", sans-serif;
+
+    margin: 4vh auto 0 auto;
+    max-width: 25rem;
+    width: 100%;
+
+    background: white;
+    box-shadow: 0 1.25rem 4rem -2.25rem var(--Bright-blue);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    max-height: 12.75rem;
+    width: auto;
+}
+.hero-container {
+    margin: 1.625rem 2.625rem;
+    text-align: center;
+}
+.hero-desc {
+    text-align: center;
+}
+.hero-desc h1 {
+    font-weight: 900;
+    font-size: 2rem;
+}
+.hero-desc p {
+    color: grey;
+    margin: 1.25rem 0;
+}
+.hero-pricing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem;
+    border-radius: 10px;
+    background: var(--Very-pale-blue)
+}
+.pricing-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pricing-img img{
+    max-width: 3rem;
+    height: auto;
+}
+.pricing-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.pricing-desc .title {
+    font-weight: 900;
+    margin: 0 0.25rem 0.25rem;
+}
+.pricing-desc .desc {
+    color: grey;
+}
+.pricing-link {
+    align-self: center;
+    margin-left: 2.25rem;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.625rem;
+}
+.button .button-confirm {
+    font-size: 1rem;
+    font-family: inherit;
+    font-weight: 700;
+    color: white;
+    padding: 1rem 4rem;
+    background: var(--Bright-blue);
+
+    outline: none;
+    border: none;
+    box-shadow: 0 1.25rem 4rem -1.25rem var(--Bright-blue);
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+.button .button-cancel {
+    font-weight: 700;
+    color: grey;
+    text-decoration: none;
+    margin-top: 1.5rem;
+}
+
+@media screen and (max-width : 375px) {
+    html {
+        font-size: 10px;
+    }
+    body {
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+}
