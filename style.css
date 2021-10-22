@@ -79,6 +79,7 @@ body {
 }
 
 .hero-image img {
+    display: block;
     max-height: 12.75rem;
 }
 .hero-container {
@@ -127,8 +128,13 @@ body {
     color: grey;
 }
 .pricing-link {
+    font-weight: 700;
     align-self: center;
     margin-left: 2.25rem;
+}
+.pricing-link a:hover {
+    color: #766cf1;
+    text-decoration: none;
 }
 .button {
     display: flex;
@@ -148,11 +154,18 @@ body {
 
     cursor: pointer;
 }
+.button .button-confirm:hover {
+    transition: all 0.2s;
+    background-color: #766cf1;
+}
 .button .button-cancel {
     font-weight: 700;
     color: grey;
     text-decoration: none;
     margin-top: 1.5rem;
+}
+.button .button-cancel:hover {
+    color: black;
 }
 
 @media screen and (max-width : 375px) {
@@ -161,9 +174,5 @@ body {
     }
     body {
         background-image: url(https://raw.githubusercontent.com/putraprdn/order-summary/4f4666fef0934c932993fff9672e5e31ee5546ed/images/pattern-background-mobile.svg);
-    }
-
-    #hero {
-        margin: 25% auto 0 auto;
     }
 }
