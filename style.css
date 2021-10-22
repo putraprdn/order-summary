@@ -80,7 +80,6 @@ body {
 
 .hero-image img {
     max-height: 12.75rem;
-    width: auto;
 }
 .hero-container {
     margin: 1.625rem 2.625rem;
@@ -137,8 +136,6 @@ body {
     margin-top: 1.625rem;
 }
 .button .button-confirm {
-    font-size: 1rem;
-    font-family: inherit;
     font-weight: 700;
     color: white;
     padding: 1rem 4rem;
