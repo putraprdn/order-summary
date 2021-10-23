@@ -135,6 +135,7 @@ body {
 .pricing-link a:hover {
     color: #766cf1;
     text-decoration: none;
+    transition: all 0.2s;
 }
 .button {
     display: flex;
